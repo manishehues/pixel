@@ -1,0 +1,689 @@
+@media screen and (max-height:850px){
+    .latestProSection .gredBg{
+        height:100vh
+    }
+}
+
+@media screen and (max-width:1919px){    
+    .latestProSection .container{
+        margin-top:-100vh
+    }
+    .siteHeader .bottomPart .row .detailSide{
+        padding:60px 80px;
+    }   
+}
+
+@media screen and (max-width:1365px){
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle{
+        font-size:22px;
+        margin-bottom:0;
+    }
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serDetails{
+        font-size:14px;
+    }    
+}
+
+@media screen and (max-width:1279px){
+
+    :root{
+        --h1:65px;
+        --h2:45px;
+        --h3:30px;
+        --h4:25px;
+        --h5:20px;
+        --h6:16px;
+    }
+    .section{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    .btn{
+        font-size:16px;
+        padding:12px 30px;
+    }
+    .cursor{
+        display:none
+    }
+    .siteHeader .topPart .row{
+        height:90px;
+    }
+    .siteLogo img{
+        max-height:25px;
+    }
+    .mainWrap{
+        margin-top:90px;
+    }
+    .siteHeader .bottomPart{
+        top:87px;
+    }
+    .container{
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item{
+        margin:10px 0;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
+        font-size:35px;
+    }
+    .siteHeader .menu .navbar-nav{
+        margin-bottom:0!important
+    }
+    .siteHeader .bottomPart .serSides{
+        text-align: right;
+    }
+    .siteHeader .bottomPart .serSides ul{
+        padding-right:35px;
+    }
+    .herArea{
+        min-height:450px;
+    }
+    .latestProSection .gredBg{
+        top:90px;
+    }
+    .siteHeader .bottomPart.openMenu{
+        height:calc(100vh - 87px)
+    }
+    .latestProSection .proSummary{
+        width:40%;
+    }
+    .latestProSection .proDetails{
+        width:60%;
+    }
+    .latestProSection .proDetails .sngProject .proImg{
+        max-height:300px;
+    }
+    .latestProSection .proDetails .sngProject .ps-5{
+        padding-left:2rem!important;
+    }
+    .clientsReviews .col-lg-9{
+        width:90%
+    }
+    .siteFooter .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .siteCopyright .callUs{
+        padding-right:2rem;
+    }
+
+    .clientsReviews .clientDetails img{
+        max-width:80%;
+        transform:unset
+    }
+    .clientsReviews .clientDetails .clientName{
+        transform: unset;
+    }
+    .clientsReviews .clientDetails .quote{
+        max-width:calc(100% - 160px);
+        transform:translate(0px, 100px);
+        padding:10px!important;
+    }
+    .clientsReviews .clientDetails .clientName{
+        padding:10px!important;
+    }
+    .clientsReviews .clientDetails .quote p{
+        font-size:14px;
+        text-align: left;
+    }
+    .clientsReviews .clientDetails .quote p img{
+        left:5px;
+    }
+    .clientsReviews .clientDetails .clientName .ownerDetails strong{
+        font-size:16px;
+    }
+    .clientsReviews .clientDetails .clientName .ownerDetails{
+        font-size:12px;
+    }
+    .clientsReviews .clientDetails{
+        text-align: center;
+    }
+    .mainPlans .bigContent{
+        z-index: -1;
+    }
+    .technologies .row{
+        
+    }
+    .technologies .col{
+        width:25%
+    }
+    .technologies .snglTech .technoWrap{
+        width:90px;
+        height:90px;
+    }
+    .technologies .snglTech .technoWrap img{
+        max-width:50%;
+        max-height:40px
+    }
+}
+
+@media screen and (max-width:1023px){
+    #homeHeroArea .col-sm-8{
+        width:100%;
+    }
+
+    .siteHeader .bottomPart .row .detailSide{
+        padding:50px;
+    }
+
+    .siteLogo img{
+        position: relative;
+        top:-2px;
+    }
+     
+    .siteHeader .bottomPart .serSides{
+        width:100%;
+        text-align: center;
+    }
+    .siteHeader .bottomPart .row{
+        height:calc(100vh - 87px);
+        align-items: center;
+        background:var(--gredient)
+    }
+    .siteHeader .bottomPart .row .detailSide{
+        display:none;
+    }
+    .siteHeader .bottomPart .container{
+        padding:0;
+    }
+    .siteHeader .menu{
+        display:none!important;
+    }
+    
+    .siteHeader .bottomPart .row .detailSide .snglServivce{
+        width:auto;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link.active,
+    .siteHeader .bottomPart .contDetails .contListing ul li a{
+        color:var(--whiteColor);
+        opacity: 1;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
+        color:var(--whiteColor)!important;
+        opacity: 0.7;
+    }
+    
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item.d-none{
+        display:block!important;
+    }
+    .siteHeader .bottomPart .contDetails{
+        max-width:350px;
+        margin:auto;
+        padding-top:20px;
+        margin-top:30px;
+        border-color:var(--whiteColor)
+    }
+    .siteHeader .bottomPart .serSides ul{
+        padding-right:0;
+    }
+
+    .bios .snglService img{
+        min-height:70px;
+        max-width:55px;
+    }
+    .bios .row.px-5{
+        padding:0!important;
+        margin-bottom:3rem;    
+    }
+    .bios .row.mt-5{
+        margin-top:1rem!important;
+    }
+    .latestProSection .proSummary{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0 !important;
+        text-align: center;
+    }
+    .latestProSection .proDetails{
+        display:none
+    }
+    .latestProSection .container{
+        margin-top:0;
+    }
+    .latestProSection .gredBg{
+        top: 0;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    #clientsReviews .container{
+        padding-bottom:80px;
+    }
+    .clientsReviews{
+        padding-left:0;
+        padding-right:0;
+    }
+    .clientsReviews .row{
+        display:block;
+    }
+    .clientsReviews .clientDetails{
+        display:block;
+        width:350px;
+        margin:auto;
+        max-width:100%
+    }
+    .clientsReviews .rightSide{
+        width: 550px;
+        display: block;
+        margin: auto;
+        margin-top: auto;    
+        text-align: center;
+        margin-top: 70px;
+        max-width:100%;
+    }
+    .siteFooter .ps-5{
+        padding-left:0!important;
+    }
+    .siteFooter .footerMenu ul li{
+        text-align: center;
+    }
+    .siteFooter .container .siteFooterMenu.mt-5{
+        margin-top:1rem!important;
+    }
+    #clientsReviews.clientsReviews .rightSide h4{
+        text-indent: 0;
+    }
+    #clientsReviews.clientsReviews .rightSide p{
+        margin-top:5px!important;
+    }
+    .siteFooter .footerMenu ul li{
+        margin:0;
+    }
+    #aboutHeroArea.herArea .leftSide{
+        width:100%;
+        padding-right:0!important;
+        text-align: center;
+    }
+    #aboutHeroArea.herArea{
+        padding-top:80px;
+    }
+    .clientsReviews .rightSide{
+        padding-left:0!important
+    }
+    /* .serInDetails .container{
+        padding-left:0;
+        padding-right:0;
+    } */
+    .clientsReviews .rightSide{
+        margin-top:50px;
+        margin-bottom:-100px;
+    }
+    .serInDetails .serDetails{
+        width:100%;
+        padding:20px 50px;
+    }
+    .serInDetails .serTitles{
+        width:100%;
+        padding-top:0;
+        padding-left:0;
+        padding-bottom:0;
+    }
+    .serInDetails .serTitles .nav-pills{
+        text-align: center;
+        display:flex;
+        justify-content: center;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item{
+        display:inline-block;
+        height:auto;
+        font-size:0;
+        margin:0 15px;
+        position: relative;        
+        bottom:-8px;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        overflow: hidden;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link{
+        padding-right:0;        
+        text-align: center;
+        font-size:0;
+        position: relative;
+        padding:10px;
+        padding-bottom:35px;  
+        min-height:90px;      
+        
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link .circleWrap{
+        background:var(--accentColor);        
+        border-radius:100%;
+        line-height:0;
+        height:90px;
+        overflow: hidden;
+        width: 90px; 
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 99;
+        border:3px solid #fff;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link::before{
+        content:'';
+        position: absolute;
+        left:0;
+        bottom:0;
+        width: 100%;
+        height:100%;
+        background:var(--accentColor);
+        -moz-transition: max-height 0.5s;
+        -ms-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+        transition: max-height 0.5s;
+        max-height:0;
+    }
+
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link.active::before{
+        max-height:100%;
+    }
+    .serInDetails .serDetails::before{
+        transform:unset;
+        background:var(--gredient180);
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link::after{
+        display:none;
+    }
+    .serInDetails{
+        background:transparent;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link svg{
+        display:block;
+        max-width:60px;
+        margin:auto;
+        height:50px;
+        max-height:50px;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link svg path{
+        fill:var(--whiteColor)
+    }
+    .clientsReviews .clientDetails .quote{
+        transform: translate(-50%, 100px);
+        left: 50%;
+        max-width: calc(100% - 160px);
+        width:100%;
+    }
+    .clientsReviews .clientDetails .quote p img{
+        transform:scale(0.7)
+    }
+    .clientsReviews .clientDetails .clientName .ownerDetails{
+        text-align: left;
+    }
+    .aboutPage{
+        margin-top:180px;
+    }
+    .projectLogos{
+        margin-top:0!important;
+    }
+    .projectLogos .snglProject .card{
+        min-height:80px;
+    }
+    .mainPlans .bigContent{
+        
+    }
+    .mainPlans .bigContent .bigTitle{
+        font-size:150px;
+    }
+
+    .clientsReviews .rightSide{
+        margin-top:70px;
+        margin-bottom:0;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:767px){
+    .section{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+    #clientsReviews .container{
+        padding-bottom:60px;
+    }
+    .siteFooter .row.siteCopyright {
+        display:block;
+    }
+    .siteCopyright .copyright.rightSide{
+        padding:20px 25px;
+    }
+    .siteCopyright .copyright.leftSide{
+        padding:20px;
+    }
+    .siteCopyright .callUs{
+        padding-right:0;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .siteFooter .siteFooterMenu .col-md-8{
+        max-width:80%;
+    }
+    #clientsReviews.clientsReviews .rightSide h4 img{
+        position:relative;
+        top:-5px;
+        width:30px;
+        margin-right:5px;
+    }
+    .siteCopyright .copyright.leftSide p,
+    .siteCopyright .copyright.rightSide p{
+        line-height:1.3em;
+    }
+    .siteCopyright .copyright p strong,
+    .siteCopyright .copyright.rightSide p strong,
+    .siteCopyright .callUs h5{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:639px){
+    :root{
+        --h1:60px;
+        --h2:40px;
+        --h3:28px;
+        --h4:25px;
+        --h5:18px;
+        --h6:15px;
+    }
+    .mainWrap{
+        margin-top:80px;
+    }
+    .btn{
+        font-size:14px;
+        padding:10px 23px
+    }
+    .container{
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .siteHeader .topPart .row{
+        height:80px;
+    }
+
+    .siteHeader .siteLogo img.desktop{
+        display:none;
+    }
+    .siteHeader .siteLogo img.mobile{
+        display:block!important;
+    }
+    .siteHeader .leftSide.col-3,
+    .siteHeader .rightSide.col-9{
+        width:50%;
+    }
+    .siteLogo img{
+        max-height:27px;
+    }
+    .siteHeader .bottomPart.openMenu,
+    .siteHeader .bottomPart .row{
+        height:calc(100vh - 77px)
+    }
+    .siteHeader .bottomPart{
+        top:77px;
+    }
+    .bios .snglService img {
+        min-height: 60px;
+        max-width: 45px;
+    }
+    .bios .snglService{
+        padding-left:7.5px;
+        padding-right:7.5px;
+    }
+    .bios .snglService .serName{
+        font-size:13px;
+    }
+    .bios p.px-5{
+        padding:0!important 
+    }
+    .bios .row.mt-5{
+        margin-bottom:2rem!important;
+    }
+    .bios .row.mt-5.justify-content-center{
+        margin-bottom:0!important;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
+        font-size:30px;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item{
+        margin:5px 0;
+    }
+    .latProjects img{
+        max-width:350px;
+    }
+    .clientsReviews .clientDetails{
+        width:300px;
+        padding-left:0!important;
+    }
+    .clientsReviews .col-lg-9{
+        width:100%;
+    }
+    #clientsReviews.clientsReviews .leftSide::after{
+        width:100%;
+        left:0;
+    }
+    .clientsReviews .rightSide{
+        padding-left:0!important;
+    }
+    .siteFooter .siteFooterMenu .col-md-8{
+        max-width:calc(100% - 30px);
+    }
+    /*.siteFooter .row.siteCopyright .col{
+        flex:auto;
+        display:flex;
+        justify-content: center;
+    }
+     .siteCopyright .copyright.rightSide,
+    .siteCopyright .copyright.leftSide{
+        width:50%;
+    }
+    .siteCopyright .copyright.leftSide p{
+        text-align: right;
+    }
+    .siteCopyright .copyright.rightSide{
+        justify-content: start;
+        padding:20px;
+        border-bottom:1px solid #dee2e6;
+    } */
+    .siteCopyright .copyright{
+        display: block !important;
+        border: none !important;
+        float: none !important;
+        width: 100% !important;
+        text-align: center;
+        padding:0!important
+    }
+    .siteFooter .row.siteCopyright{
+        border:none!important
+    }
+    .siteCopyright .copyright.leftSide{
+        padding:15px 10px;
+    }
+    .siteCopyright .copyright.leftSide p, .siteCopyright .copyright.rightSide p{
+        line-height:1.5em;
+        font-size:14px;
+    }
+    .siteCopyright .copyright p strong, .siteCopyright .copyright.rightSide p strong, .siteCopyright .callUs h5{
+        font-size:14px;
+        line-height:1.5em;
+    }
+    .siteCopyright .callUs{
+        text-align: center!important;;
+    }
+    .siteFooter .row.siteCopyright{
+        margin-top: 25px !important;
+        padding-top: 30px;
+        border-top: 1px solid var(--borderColor) !important;
+        background: var(--offWhite);
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link .circleWrap{
+        height:70px;
+        width:70px;
+        border-width: 2px;
+    }
+    .serInDetails .serTitles .nav-pills{
+        justify-content: space-between;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item{
+        margin:0;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link svg{
+        max-height:35px;
+    }
+    .projectLogos .row.mb-5{
+        margin-bottom:1rem!important;
+    }
+    .projectLogos .snglProject{
+        padding:7.5px!important
+    }
+    .projectLogos .snglProject .card img{
+        max-height:35px;
+    }
+    #aboutHeroArea.herArea{
+        padding-top:40px;
+    }
+    .clientsReviews .rightSide{
+        width:100%;
+    }
+    .clientsReviews .clientDetails img{
+        max-width:85%;
+    }
+    .clientsReviews .clientDetails .quote{
+        max-width:calc(100% - 100px)
+    }
+
+    .projectLogos .snglProject .card img {
+        max-height: 30px;
+        max-width: 70px;
+    }
+
+}
+
+@media screen and (max-width:479px){
+    .section{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .btn{
+        padding:8px 18px;
+    }
+    .siteLogo img{
+        max-height:24px;
+    }
+    .siteHeader .bars{
+        margin-right:10px;
+    }
+    .projectLogos .snglProject .card .card-body{
+        padding:7.5px;
+    }
+    .projectLogos .snglProject .card{
+        min-height:60px;
+    }
+    .serInDetails .serDetails{
+        padding:20px 30px!important;
+    }
+    .serInDetails .serTitles .nav-pills .nav-item .nav-link svg{
+        max-height:30px;
+        max-width:35px;
+    }
+    .projectLogos .snglProject .card img {
+        max-height: 25px;        
+    }
+}
