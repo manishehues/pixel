@@ -1,4 +1,5 @@
 import React from "react";
+import {Routes, Route, Link, NavLink } from 'react-router-dom';
 
 function Footer(){
     return(
@@ -10,10 +11,10 @@ function Footer(){
                             <div className="row ps-5 justify-content-center">
                                 <div className="col-3 footerMenu">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About</a></li>
-                                        <li><a href="#">Expertise</a></li>
-                                        <li><a href="#">Case Studies</a></li>                                        
+                                        <li><NavLink to="/" className="nav-link">Home</NavLink></li>
+                                        <li><NavLink to="/about" className="nav-link">About</NavLink></li>
+                                        <li><NavLink to="/expertise" className="nav-link">Expertise</NavLink></li>
+                                        <li><NavLink to="/careers" className="nav-link">Career</NavLink></li>                                        
                                     </ul>
                                 </div>
                                 <div className="col-3 footerMenu">

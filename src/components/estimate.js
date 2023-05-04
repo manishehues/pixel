@@ -10,7 +10,7 @@ function Estimate(){
                 <div className="col">
                     <h3>Interested in our work? <br />Let's collaborate together.</h3>
                     <div className="btnArea mt-4">
-                        <a href="#" className="btn btn-primary">Get Free Estimate</a>
+                        <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-primary">Get Free Estimate</a>
                     </div>
                 </div>
             </div>           

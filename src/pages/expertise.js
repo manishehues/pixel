@@ -12,7 +12,7 @@ function Expertise(){
                             <h2 className="text-light">Future-Forward <br />Digital Experiences</h2>
                             <p className="text-light mt-3">Our team combines proficiency in technology, design, and business consulting to assist our clients in envisioning 'what's next' amid the evolving global landscape.</p>
                             <div className="btnArea mt-4">
-                                <a href="#" className="btn btn-light">Let’s work together</a>
+                                <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-light">Let’s work together</a>
                             </div>                            
                         </div>                       
                     </div>
@@ -22,10 +22,8 @@ function Expertise(){
                 <div className="container g-0">
                     <div className="row g-0">
                         <div className="col-sm-2 bigContent">
-                            <div className="video">
-                                <video id="video-background" autoplay="autoplay" loop  muted playsinline width="100%" height="auto">
-                                    <source src="assets/video/design.mp4" type="video/mp4" />
-                                </video>
+                            <div className="video">                                
+                                <video src="assets/video/design.mp4" autoplay={"true"}  mute="true" loop="true" playsInline="true" />
                             </div>
                             <div className="bigTitle">Design</div>
                         </div>
@@ -48,7 +46,7 @@ function Expertise(){
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>            
             <section id="develope" className="reverse py-5 mainPlans container-fluid">
                 <div className="container g-0">
                     <div className="row g-0">
@@ -70,10 +68,8 @@ function Expertise(){
                             </div>
                         </div>                                               
                         <div className="col-sm-2 bigContent">
-                            <div className="video">
-                                <video id="video-background" autoplay="autoplay" loop  muted playsinline width="100%" height="auto">
-                                    <source src="assets/video/develope.mp4" type="video/mp4" />
-                                </video>
+                            <div className="video">                                
+                                <video src="assets/video/develope.mp4" autoplay="true"  mute="true" loop="true" playsInline="true" />
                             </div>
                             <div className="bigTitle">Develop</div>
                         </div>
@@ -84,10 +80,8 @@ function Expertise(){
                 <div className="container g-0">
                     <div className="row g-0">
                         <div className="col-sm-2 bigContent">
-                            <div className="video">
-                                <video id="video-background" autoplay="autoplay" loop  muted playsinline width="100%" height="auto">
-                                    <source src="assets/video/launch.mp4" type="video/mp4" />
-                                </video>
+                            <div className="video">                                
+                                <video src="assets/video/launch.mp4" autoplay="true"  mute="true" loop="true" playsInline="true" />
                             </div>
                             <div className="bigTitle">Launch</div>
                         </div>
@@ -104,7 +98,7 @@ function Expertise(){
                         </div>                       
                     </div>
                 </div>
-            </section>
+            </section> 
             <section id="techno" className="technologies section pb-0 container-fluid ">
                 <div className="container g-0">
                     <div className="row justify-content-center">
@@ -150,7 +144,7 @@ function Expertise(){
                         </div>                       
                     </div>
                 </div>
-            </section>
+            </section>           
             <Estimate />            
         </div>
     );

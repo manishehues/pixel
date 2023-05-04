@@ -219,6 +219,10 @@
     max-width:960px;
 }
 
+.container-sm{
+    max-width:700px;
+}
+
 img{
     max-width:100%;
     -webkit-transition: all 0.3s ease-in-out;
@@ -234,6 +238,7 @@ body{
     color:var(--primaryColor);
     font-family:var(--GT);
     font-weight:var(--medium);
+    
 }
 
 .textColor{
@@ -351,10 +356,12 @@ h6{
     width:100%;
 }
 
+
 .siteHeader .bottomPart .row .detailSide{
-    height:calc(100vh - 220px);
+    height:90vh;
     background: var(--gredient);
-    padding:100px; 
+    padding:100px;
+    max-height:650px; 
 }
 
 .siteHeader .bottomPart .row .detailSide .row{
@@ -366,8 +373,23 @@ h6{
 }
 
 .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle{
-    font-size:var(--h4);
-    margin-bottom:10px;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.siteHeader .bottomPart .row .detailSide .snglServivce ul{
+    list-style:none;
+    padding:0;    
+}
+.siteHeader .bottomPart .row .detailSide .snglServivce ul li{
+    font-weight:normal;
+    margin:5px 0;
+}
+.siteHeader .bottomPart .row .detailSide .snglServivce ul li a{
+    opacity: 0.7;
+}
+.siteHeader .bottomPart .row .detailSide .snglServivce ul li a:hover{
+    opacity: 1;
 }
 
 .siteHeader .bottomPart .row .detailSide .snglServivce .serDetails{
@@ -377,12 +399,12 @@ h6{
 
 
 .siteHeader .bottomPart .serSides .navbar-nav li.nav-item{
-    margin:20px 0;
+    margin:15px 0;
     display:block;
 }
 
 .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
-    font-size:45px;
+    font-size:40px;
     display:block;
     letter-spacing: -1px;
     color:var(--primaryColor);
@@ -391,7 +413,7 @@ h6{
 }
 
 .siteHeader .bottomPart .contDetails{
-    margin-top:45px;
+    margin-top:35px;
     padding-top:25px;
     border-top:1px solid var(--primaryColor);
     max-width:calc(100% - 35px)
@@ -464,7 +486,7 @@ h6{
 
 .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
     color:var(--primaryColor);
-    font-weight:var(--bold);
+    font-weight:var(--medium);
 }
 
 .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link.active,
@@ -600,7 +622,7 @@ h6{
 }
 
 .mainWrap{
-    margin-top:110px
+    margin-top:110px;   
 }
 
 .smallTagLine{
@@ -1053,7 +1075,8 @@ h6{
     position: absolute;
     width:calc(100% - 20px);
     height:99%;
-    top:2px;   
+    top:2px;  
+    overflow: hidden; 
 }
 
 .mainPlans .bigContent .video video{
@@ -1074,7 +1097,7 @@ h6{
 .mainPlans .bigContent .bigTitle{
     font-family: var(--GT);
     font-size: 180px;
-    font-weight: var(--bold);
+    font-weight: var(--medium);
     color: var(--primaryColor);
     letter-spacing: -5px;
     -webkit-writing-mode: vertical-lr;
@@ -1162,6 +1185,88 @@ h6{
     color:var(--accentColor);
     font-weight:var(--bold)
 }
+
+/* ============= Careers Page =========== */
+
+.vacancyCat .sameWidth{
+    max-width:760px;
+    margin:auto;
+    justify-content: center;
+}
+.vacancyCat .nav-pills{    
+    box-shadow:inset 0px -1px 0px var(--borderColor);
+    margin-top:60px;
+}
+.vacancyCat .nav-pills .nav-item{
+    margin-left:10px;
+    margin-right:10px;
+}
+.vacancyCat .nav-pills .nav-item a.nav-link{
+    padding:0 20px;
+    font-size:var(--h6);
+    color:var(--primaryColor);
+    font-weight:normal;
+    padding-bottom:15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow:inset 0px 0px 0px var(--accentColor);
+    border-radius:0;
+    color:var(--textColor)
+}
+
+.vacancyCat .nav-pills .nav-item a.nav-link.active{
+    background:transparent;
+    box-shadow:inset 0px -4px 0px var(--accentColor);
+    font-weight:var(--medium);
+    color:var(--primaryColor)
+}
+
+.openVacancies .tab-pane .noVacancy{    
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.openVacancies .tab-pane .noVacancy h2{
+    width:100%;
+    margin-bottom:0;   
+    color:var(--textColor)
+
+   
+}
+.openVacancies .tab-pane .noVacancy p{
+    margin-bottom:0;
+      
+
+}
+.openVacancies .tab-content{
+    border-bottom:1px solid var(--borderColor);
+}
+
+/* =========== Services =========== */
+
+.wpSolutions .allSolutions .snglSolution{
+    margin:20px 0;
+}
+
+.wpSolutions .allSolutions .snglSolution .iconWrap{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:auto;
+    border-radius:100%;
+    overflow: hidden;
+    background-color: var(--accentColor);
+}
+.wpSolutions .allSolutions .snglSolution .solTitle{
+    font-size:var(--h6);
+    font-weight:normal;
+    letter-spacing: normal;
+    line-height:1.4em
+}
+
+
 
 
 

@@ -16,7 +16,7 @@ function Home(){
                                 <div className="col-sm-8">
                                     <p className="text-light">We are a web development company based in India that specializes in offering a wide range of services aimed at helping brands enhance their digital presence and achieve online business growth.</p>
                                     <div className="btnArea mt-4">
-                                        <a href="#" className="btn btn-primary">Let’s work together</a>
+                                        <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-primary">Let’s work together</a>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ function Home(){
                     </div>
                     <div className="row g-0 mt-5 text-center justify-content-center">
                         <div className="col-12 btnArea">
-                            <a href="#" className="btn btn-primary">Let’s discuss your needs</a>
+                            <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-primary">Let’s discuss your needs</a>
                         </div>
                     </div>
                 </div>
