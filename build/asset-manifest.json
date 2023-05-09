@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9118798f.css",
-    "main.js": "/static/js/main.955c0dab.js",
+    "main.css": "/static/css/main.693d5a39.css",
+    "main.js": "/static/js/main.77a7b579.js",
     "static/js/787.199cee3d.chunk.js": "/static/js/787.199cee3d.chunk.js",
     "static/media/expertise-bg.png": "/static/media/expertise-bg.f14409c7b20b88d650f1.png",
     "static/media/GTWalsheimPro-ThinOblique.svg": "/static/media/GTWalsheimPro-ThinOblique.b379f9b6ea7b3a0b52fa.svg",
@@ -66,12 +66,12 @@
     "static/media/GTWalsheimPro-UltraLight.woff2": "/static/media/GTWalsheimPro-UltraLight.339fd4ae2adf8d611015.woff2",
     "index.html": "/index.html",
     "static/media/bg-pattern.svg": "/static/media/bg-pattern.bc67d160669e6e60093f.svg",
-    "main.9118798f.css.map": "/static/css/main.9118798f.css.map",
-    "main.955c0dab.js.map": "/static/js/main.955c0dab.js.map",
+    "main.693d5a39.css.map": "/static/css/main.693d5a39.css.map",
+    "main.77a7b579.js.map": "/static/js/main.77a7b579.js.map",
     "787.199cee3d.chunk.js.map": "/static/js/787.199cee3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9118798f.css",
-    "static/js/main.955c0dab.js"
+    "static/css/main.693d5a39.css",
+    "static/js/main.77a7b579.js"
   ]
 }

@@ -1,23 +1,21 @@
 import React from 'react';
 import Estimate from '../components/estimate';
+import InternalHeroArea from '../components/InternalHeroArea';
 
 
 function Expertise(){
     return(
         <div id="main" className="mainWrap container-fluid g-0">
-            <section id="expertise" className="herArea container-fluid internalMain expertiseBanner clientsReviews d-flex align-items-center position-relative">
-                <div className="container position-relative">
-                    <div className="row g-0 justify-content-center align-items-center text-center">
-                        <div className="col-md-12 col-lg-6">
-                            <h2 className="text-light">Future-Forward <br />Digital Experiences</h2>
-                            <p className="text-light mt-3">Our team combines proficiency in technology, design, and business consulting to assist our clients in envisioning 'what's next' amid the evolving global landscape.</p>
-                            <div className="btnArea mt-4">
-                                <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-light">Let’s work together</a>
-                            </div>                            
-                        </div>                       
-                    </div>
-                </div>
-            </section>
+            <InternalHeroArea
+                idName="expertise"
+                className="expertiseBanner expertiseBanner"
+                colWidth="col-md-10 col-lg-6"
+                smallTagLine=""
+                bannerTitle="Future-Forward Digital Experiences" 
+                bannerDescription="Our team combines proficiency in technology, design, and business consulting to assist our clients in envisioning 'what's next' amid the evolving global landscape."                           
+                btnLink="https://forms.gle/fbFftGSRXGQueHur8"
+                btnText="Let’s work together"
+            />            
             <section id="designs" className="section mainPlans container-fluid pb-0">
                 <div className="container g-0">
                     <div className="row g-0">

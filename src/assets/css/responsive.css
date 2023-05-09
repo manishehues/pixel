@@ -315,7 +315,7 @@
         position: absolute;
         width: 100%;
     }
-    #clientsReviews .container{
+    .clientsReviews .container{
         padding-bottom:80px;
     }
     .clientsReviews{
@@ -349,10 +349,10 @@
     .siteFooter .container .siteFooterMenu.mt-5{
         margin-top:1rem!important;
     }
-    #clientsReviews.clientsReviews .rightSide h4{
+    .clientsReviews.clientsReviews .rightSide h4{
         text-indent: 0;
     }
-    #clientsReviews.clientsReviews .rightSide p{
+    .clientsReviews.clientsReviews .rightSide p{
         margin-top:5px!important;
     }
     .siteFooter .footerMenu ul li{
@@ -521,7 +521,11 @@
         padding-top:60px;
         padding-bottom:60px;
     }
-    #clientsReviews .container{
+
+    .internalMain.clientsReviews .container  {
+        padding-bottom:0;
+    }
+    .clientsReviews .container{
         padding-bottom:60px;
     }
     .siteFooter .row.siteCopyright {
@@ -541,7 +545,7 @@
     .siteFooter .siteFooterMenu .col-md-8{
         max-width:80%;
     }
-    #clientsReviews.clientsReviews .rightSide h4 img{
+    .clientsReviews.clientsReviews .rightSide h4 img{
         position:relative;
         top:-5px;
         width:30px;
@@ -703,7 +707,7 @@
     .clientsReviews .col-lg-9{
         width:100%;
     }
-    #clientsReviews.clientsReviews .leftSide::after{
+    .clientsReviews.clientsReviews .leftSide::after{
         width:100%;
         left:0;
     }
@@ -801,7 +805,7 @@
         max-height: 30px;
         max-width: 70px;
     }
-    #clientsReviews.clientsReviews .leftSide::after {
+    .clientsReviews.clientsReviews .leftSide::after {
         width: 85%;
         left: 0;
         top:1.5rem;

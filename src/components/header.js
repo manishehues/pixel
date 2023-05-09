@@ -7,7 +7,11 @@ import About from '../pages/about';
 import Contact from '../pages/contact';
 import Expertise from '../pages/expertise';
 import Career from '../pages/career';
-import Development from '../pages/services/wordpress/deveopment';
+import Development from '../pages/services/wordpress/wordpress-development';
+import Ecommerce from '../pages/services/wordpress/wordpress-ecommerce';
+import BusinessWebsite from '../pages/services/wordpress/wordpress-business-website';
+import MigrateUpdates from '../pages/services/wordpress/wordpress-migrate-upgrade';
+import MaintenanceSupport from '../pages/services/wordpress/wordpress-maintenance-support';
 import Estimate from './estimate';
 import $ from "jquery";
 
@@ -104,46 +108,47 @@ function Header() {
                         </div>
                         <div className="col-8 detailSide">
                             <div className="row g-0 text-light align-items-center">                                
-                                <div className="col-4 snglServivce">
+                                <div className="col-6 snglServivce">
                                     <div className="serTitle">WordPress</div>
                                     <ul>
-                                        <li><NavLink to="/wordpress-development" className="nav-link" onClick={closeMenu}>Development</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Maintenance and Support</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Blogs and personal</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Business websites</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Migration</NavLink></li>
-                                    </ul>                                    
-                                </div>                                
-                                <div className="col-4 snglServivce ">
-                                    <div className="serTitle">Design</div>
-                                    <ul>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Web Design</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>UI/UX Design</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Apps Design</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Website Prototypes</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Graphic Design</NavLink></li>
+                                        <li><NavLink to="/wordpress-development" className="nav-link" onClick={closeMenu}>WordPress Development</NavLink></li>
+                                        <li><NavLink to="/wordpress-ecommerce" className="nav-link" onClick={closeMenu}>WordPress eCommerce</NavLink></li>
+                                        <li><NavLink to="/wordpress-business-websites" className="nav-link" onClick={closeMenu}>WordPress Business Websites</NavLink></li>
+                                        <li><NavLink to="/wordpress-migrate-upgrade" className="nav-link" onClick={closeMenu}>WordPress Migration and Upgrade</NavLink></li>
+                                        <li><NavLink to="/wordperss-maintenance-support" className="nav-link" onClick={closeMenu}>WordPress Maintenance and Support</NavLink></li>
                                     </ul>                                    
                                 </div>
-                                <div className="col-4 snglServivce">
+                                <div className="col-6 snglServivce">
                                     <div className="serTitle">Technologies</div>
                                     <ul>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Web Development</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>CMS Development</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>eCommerce Development</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Web Software Development</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Custom Development</NavLink></li>
+                                        <li><NavLink to="/web-development" className="nav-link" onClick={closeMenu}>Web Development</NavLink></li>
+                                        <li><NavLink to="/cms-development" className="nav-link" onClick={closeMenu}>CMS Development</NavLink></li>
+                                        <li><NavLink to="/eCommerce-development" className="nav-link" onClick={closeMenu}>eCommerce Development</NavLink></li>
+                                        <li><NavLink to="/web-solftware" className="nav-link" onClick={closeMenu}>Web Software Development</NavLink></li>
+                                        <li><NavLink to="/custom-development" className="nav-link" onClick={closeMenu}>Custom Development</NavLink></li>
                                     </ul>                                    
-                                </div> 
-                                <div className="col-5 snglServivce">
+                                </div>
+                                <div className="col-6 snglServivce">
                                     <div className="serTitle">Digital Marketing</div>
                                     <ul>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Search Engine Optimization (SEO)</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Content Writing</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Social Media Marketing (SMM)</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Video Marketing</NavLink></li>
-                                        <li><NavLink to="/" className="nav-link" onClick={closeMenu}>Web Analytics and Data-Driven</NavLink></li>
+                                        <li><NavLink to="/seo" className="nav-link" onClick={closeMenu}>Search Engine Optimization (SEO)</NavLink></li>
+                                        <li><NavLink to="/content-writing" className="nav-link" onClick={closeMenu}>Content Writing</NavLink></li>
+                                        <li><NavLink to="/smm" className="nav-link" onClick={closeMenu}>Social Media Marketing (SMM)</NavLink></li>
+                                        <li><NavLink to="/video-marketing" className="nav-link" onClick={closeMenu}>Video Marketing</NavLink></li>
+                                        <li><NavLink to="/Web-Analytics" className="nav-link" onClick={closeMenu}>Web Analytics and Data-Driven</NavLink></li>
                                     </ul>                                    
-                                </div>                                                                                             
+                                </div>                                    
+                                <div className="col-6 snglServivce ">
+                                    <div className="serTitle">Design</div>
+                                    <ul>
+                                        <li><NavLink to="/web-design" className="nav-link" onClick={closeMenu}>Web Design</NavLink></li>
+                                        <li><NavLink to="/uiux-design" className="nav-link" onClick={closeMenu}>UI/UX Design</NavLink></li>
+                                        <li><NavLink to="/apps-design" className="nav-link" onClick={closeMenu}>Apps Design</NavLink></li>
+                                        <li><NavLink to="/website-prototype" className="nav-link" onClick={closeMenu}>Website Prototypes</NavLink></li>
+                                        <li><NavLink to="/graphic-design" className="nav-link" onClick={closeMenu}>Graphic Design</NavLink></li>
+                                    </ul>                                    
+                                </div>                                
+                                                                                                                          
                             </div>
                         </div>
                     </div>
@@ -157,6 +162,10 @@ function Header() {
             <Route path="/careers" element={<Career />} />                                      
             <Route path="/contact-us" element={<Contact />} />                      
             <Route path="/wordpress-development" element={<Development />} />                      
+            <Route path="/wordpress-ecommerce" element={<Ecommerce />} />                      
+            <Route path="/wordpress-business-websites" element={<BusinessWebsite />} />                      
+            <Route path="/wordpress-migrate-upgrade" element={<MigrateUpdates />} />                      
+            <Route path="/wordperss-maintenance-support" element={<MaintenanceSupport />} />                      
         </Routes>
                       
     </>

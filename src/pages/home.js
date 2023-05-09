@@ -1,29 +1,22 @@
 import React from 'react';
 import Estimate from '../components/estimate';
+import InternalHeroArea from '../components/InternalHeroArea';
 
 
 function Home(){   
 
     return(
         <div id="main" className="mainWrap container-fluid g-0">
-            <section id="homeHeroArea" className="herArea container-fluid homeMain d-flex align-items-center">
-                <div className="container">
-                    <div className="row g-0 justify-content-center text-center ">
-                        <div className="col-md-10 text-light">
-                            <div className="smallTagLine">Bringing Your Vision to Life Online.</div>
-                            <h2>Empowering Your Digital World</h2>
-                            <div className="row g-0 justify-content-center">
-                                <div className="col-sm-8">
-                                    <p className="text-light">We are a web development company based in India that specializes in offering a wide range of services aimed at helping brands enhance their digital presence and achieve online business growth.</p>
-                                    <div className="btnArea mt-4">
-                                        <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-primary">Let’s work together</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <InternalHeroArea
+                idName="homeHeroArea"
+                className="homeMain"
+                colWidth="col-md-10 col-lg-8"
+                smallTagLine="Bringing Your Vision to Life Online."
+                bannerTitle="Empowering Your Digital World" 
+                bannerDescription="We are a web development company based in India that specializes in offering a wide range of services aimed at helping brands enhance their digital presence and achieve online business growth."                           
+                btnLink="https://forms.gle/fbFftGSRXGQueHur8"
+                btnText="Let’s work together"
+            />            
             <section id="biosSection" className="container-fluid section bios">
                 <div className="container-lg">
                     <div className="row text-center g-0 justify-content-center">

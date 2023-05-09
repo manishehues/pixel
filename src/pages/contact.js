@@ -2,24 +2,21 @@ import React from 'react';
 import {Link } from 'react-router-dom';
 import ContactForm from '../components/ContactForm';
 import Estimate from '../components/estimate';
+import InternalHeroArea from '../components/InternalHeroArea';
 
 function Contact(){
     return(
         <div id="main" className="mainWrap container-fluid g-0">
-            <section id="contHeroArea" className="herArea container-fluid homeMain d-flex align-items-center">
-                <div className="container">
-                    <div className="row g-0 justify-content-center text-center ">
-                        <div className="col-md-10 text-light">
-                            <div className="smallTagLine">Contact Us</div>
-                            <h2>Always seeking the <br />next big thing!</h2>
-                            <p className="text-light">Don't wait - get in touch and let's move things forward!</p> 
-                            <div className="btnArea mt-4">
-                                <a href="https://forms.gle/fbFftGSRXGQueHur8" target={"blank"} className="btn btn-light">Get In Touch</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <InternalHeroArea
+                idName="contHeroArea"
+                className="contactBanner internalMain"
+                colWidth="col-md-10 col-lg-6"
+                smallTagLine="Contact Us"
+                bannerTitle="Always seeking the next big thing!" 
+                bannerDescription="Don't wait - get in touch and let's move things forward!"                           
+                btnLink="https://forms.gle/fbFftGSRXGQueHur8"
+                btnText="Get In Touch"
+            />            
             <section className="container-fluid contArea-detail">
                 <div className="container section pb-5">
                     <div className="row g-0 flex-row-reverse justify-content-center">

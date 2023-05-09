@@ -1,26 +1,23 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
+import InternalHeroArea from '../components/InternalHeroArea';
 import Estimate from '../components/estimate';
 
 
 function Career(){
     return(
         <div id="main" className="mainWrap container-fluid g-0">
-            <section id="careers" className="herArea container-fluid internalMain careersBanner clientsReviews d-flex align-items-center position-relative">
-                <div className="container position-relative">
-                    <div className="row g-0 justify-content-center align-items-center text-center">
-                        <div className="col-md-10 col-lg-6 text-light">
-                            <div className="smallTagLine">Careers</div>
-                            <h2 className="text-light">Find your next <br />opportunity with us.</h2>
-                            <p className="text-light mt-3">We actively seek out individuals who are masters of their craft to join our team.</p>
-                            <div className="btnArea mt-4">
-                                <a href="https://forms.gle/6WF3iCV9oYFZiLFP7" target={"blank_"} className="btn btn-light">Send Your Resume</a>
-                            </div>                            
-                        </div>                       
-                    </div>
-                </div>
-            </section>
+            <InternalHeroArea
+                idName="careers"
+                className="careersBanner internalMain"
+                colWidth="col-md-10 col-lg-6"
+                smallTagLine="Career"
+                bannerTitle="Find your next opportunity with us." 
+                bannerDescription="We actively seek out individuals who are masters of their craft to join our team."                           
+                btnLink="https://forms.gle/6WF3iCV9oYFZiLFP7"
+                btnText="Send Your Resume"
+            />            
             <section id="vacancies" className="section vacancies container-fluid g-0 pb-0">
                 <div className="container">
                     <div className="row">
