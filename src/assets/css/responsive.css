@@ -97,7 +97,8 @@
         padding-left:2rem!important;
     }
     .clientsReviews .col-lg-9{
-        width:90%
+        width:90%;
+        margin:auto;
     }
     .siteFooter .container{
         padding-left:0;
@@ -224,6 +225,12 @@
     #develope.mainPlans{
         padding-bottom:0!important
     }
+
+    .reasons .flex-row-reverse .content,
+    .reasons .content{
+        padding-left:3rem;
+        padding-right:3rem;
+    }
 }
 
 @media screen and (max-width:1023px){
@@ -238,6 +245,14 @@
     .siteLogo img{
         position: relative;
         top:-2px;
+    }
+
+    .hideMediumDesvices{
+        display:none;
+    }
+
+    .siteHeader .bottomPart .contDetails{
+        text-align: center;
     }
      
     .siteHeader .bottomPart .serSides{
@@ -271,6 +286,9 @@
         color:var(--whiteColor)!important;
         opacity: 0.7;
     }
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle svg{
+        display:none;
+    }
     
     .siteHeader .bottomPart .serSides .navbar-nav li.nav-item.d-none{
         display:block!important;
@@ -280,11 +298,23 @@
         margin:auto;
         padding-top:20px;
         margin-top:30px;
-        border-color:var(--whiteColor)
+        border-color:var(--whiteColor);
+        margin-bottom:30px!important;
     }
-    .siteHeader .bottomPart .serSides ul{
+    .siteHeader .bottomPart .serSides > ul{
         padding-right:0;
+        margin:25px 0!important
     }
+
+    .siteHeader .deskMediDevice{
+        display:none;
+    }
+    .siteHeader .mobileDevice{
+        display:block!important;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav > li.nav-item:not(:last-child) {
+        border: none;
+      }
 
     .bios .snglService img{
         min-height:70px;
@@ -512,7 +542,189 @@
         max-width: 35px;
         max-height: 30px;
     }
+
+    .wpSolutions .allSolutions .snglSolution .iconWrap{
+        width:90px;
+        height:90px;
+        font-size:30px; 
+    }
+    .allSteps .snglStep .stepNum{
+        width:85px;
+        height:85px;
+        font-size:30px;
+        border-width:3px;
+    }
+    .allSteps .snglStep{
+        margin-top:-40px;
+        padding: 0 0
+    }
+    .allSteps .snglStep .stepTitle{
+        font-size:var(--h6)
+    }
+    .allSteps .snglStep .stepNum{
+        margin-bottom:10px;
+    }
+    .allSteps .container-lg{
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .allSteps .container-lg .row{
+        margin-left:0;
+        margin-right:0;
+        padding-top:1rem!important
+    }
+    .allSteps .container-lg .mb-4{
+        margin-bottom:0!important;
+    }
+    .allSteps .col-sm-6{
+        padding-left:7.5px;
+        padding-right:7.5px;
+    }
+    #clientsReviews .container{
+        padding-bottom:100px;
+    }
+
+    .siteHeader .bottomPart .row{
+        align-items: start!important;
+    }
+    .siteHeader .bottomPart .serSides{
+        text-align: left;
+    }
+    .siteHeader .bottomPart .serSides ul{
+        margin-bottom:0;
+    }
+    .siteHeader .bottomPart,
+    .siteHeader .bottomPart.openMenu,
+    .siteHeader .bottomPart .row{
+        height:auto;
+    }
+    .siteHeader .bottomPart{
+        height:calc(100vh - 87px)!important;
+        background:var(--gredient180);
+    }
+    .siteHeader .bottomPart .serSides{       
+        
+        max-height:100vh;        
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item{
+        margin:0;
+        position: relative;        
+    }
     
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item > a.nav-link{
+        padding:25px;
+        opacity: 1;
+        position: relative;
+        font-size:35px;
+        text-align: center;
+    }
+   
+    .siteHeader .bottomPart .row{
+        background:transparent
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link >  span{
+        position: absolute;
+        width:30px;
+        height:30px;
+        right:25px;
+        top:50%;
+        transform:translateY(-50%) rotate(90deg);
+        transform-origin: center center;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link >  span::before{
+        content:'';
+        position: absolute;
+        width:100%;
+        height:1px;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background:var(--whiteColor);
+        top:50%;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link >  span::after{
+        content:'';
+        position: absolute;
+        width:1px;
+        height:100%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background:var(--whiteColor);
+        top:50%;
+    }
+
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item.openSubMenu a.nav-link span{       
+        transform:translateY(-50%) rotate(45deg);        
+    }
+    .siteHeader .bottomPart{
+        max-height:calc(100vh - 87px);       
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce{
+        width:50%;
+        margin:15px 0;
+        text-align: center;
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul li a.nav-link{
+        font-size:16px;
+        letter-spacing: normal;
+        padding:0;
+        font-weight:normal
+    }
+    .siteHeader .bottomPart .row .detailSide .row{
+        height:auto;
+        padding:30px;       
+    }
+    .siteHeader .bottomPart .serSides.mobileDevice .detailSide{
+        height:auto;
+        max-height:0;
+        overflow: hidden;
+        display:block;
+        background:var(--primaryColor);
+        padding:0;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+        max-height: 0;        
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item.openSubMenu .detailSide{
+        max-height:650px;
+    }
+    .siteHeader .bottomPart{       
+        max-height:calc(100vh - 87px);
+    }
+
+    .siteHeader .bottomPart.openMenu,
+    .siteHeader .bottomPart .row{
+        max-height:calc(100vh - 77px);
+        height:100%!important;
+        overflow: scroll;
+    }
+    .reasons .heading{
+        top:90px;       
+    }
+    .reasons .heading h2{
+        font-size:35px;
+    }
+    .reasons .flex-row-reverse .content{
+        padding-left:15px;
+        padding-right:2rem
+    }
+    .reasons .content{
+        padding-right:15px;
+        padding-left:2rem;
+    }
+    .reasons .content ul{
+        padding-left:15px;
+    }
+    .pricing .packageTitles{
+        max-width:500px;
+        width:100%
+    }
     
 }
 
@@ -579,6 +791,50 @@
     .mainPlans .bigContent .video video{
         width:100%;
     }
+    .singleServices h2 br{
+        display:none;
+    }
+    .singleServices h2{
+        font-size:35px;
+    }
+    .projectLogos .mb-5{
+        margin-bottom:1rem!important
+    }
+    .projectLogos .container-sm{
+        max-width:550px;
+    }
+    .wpSolutions .allSolutions .snglSolution{
+        margin:10px 0;
+    }
+    .wpSolutions .container-lg{
+        padding-left:25px;
+        padding-right:25px;
+    }
+    .allSteps .card .card-body h3{
+        font-size:25px;
+    }
+
+    .reasons .heading{
+        top:90px;
+        padding:30px 25px;
+        text-align: left!important;
+        background:var(--gredient180)
+    }
+    .reasons .heading h2{
+        font-size:30px;
+        margin-bottom:0
+    }
+
+    .reasons .section{
+        padding-top:0;
+    }
+    .reasons .container{
+        padding-left:12px;
+        padding-right:12px;
+    }
+    .reasons .section:not(:first-child){
+        margin-top:35px;
+    }
 }
 
 @media screen and (max-width:666px){
@@ -624,7 +880,33 @@
     .exImgArea .statScore{
         padding:10px;
     }
+    .allSteps .snglStep .stepNum{
+        width:60px;
+        height:60px;
+        font-size:20px;
+    }
+    .allSteps .snglStep .stepTitle{
+        font-size:14px;
+        margin-bottom:0;
+    }
+    .method.section{
+        padding-bottom:30px;
+    }
+    #clientsReviews .container{
+        padding-bottom:70px;
+    }
+    .pricing .packageWrap .priceWrap,
+    .packageDetail .packageWrap .planWrap{
+        padding:40px;
+    }
     
+    .packageDetail .packageWrap .planWrap ul li svg{
+        font-size:14px;
+    }
+    .packageDetail .packageWrap .planWrap ul li{
+        font-size:14px;
+        margin:2px 0
+    }
 }
 
 @media screen and (max-width:639px){
@@ -635,6 +917,7 @@
         --h4:25px;
         --h5:18px;
         --h6:15px;
+        --g-text-line-height:1.4em;
     }
     .mainWrap{
         margin-top:80px;
@@ -643,7 +926,8 @@
         font-size:14px;
         padding:10px 23px
     }
-    .container{
+    .container,
+    .container-lg{
         padding-left:25px;
         padding-right:25px;
     }
@@ -663,10 +947,6 @@
     }
     .siteLogo img{
         max-height:27px;
-    }
-    .siteHeader .bottomPart.openMenu,
-    .siteHeader .bottomPart .row{
-        height:calc(100vh - 77px)
     }
     .siteHeader .bottomPart{
         top:77px;
@@ -693,9 +973,6 @@
     }
     .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link{
         font-size:30px;
-    }
-    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item{
-        margin:5px 0;
     }
     .latProjects img{
         max-width:350px;
@@ -809,11 +1086,55 @@
         width: 85%;
         left: 0;
         top:1.5rem;
-      }
+    }
 
-}
+    #clientsReviews.clientsReviews .leftSide::after{
+        left: 0;
+        top: 30px;
+        width: 85%;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav > li.nav-item:not(:last-child){
+        border:none;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item a.nav-link > span{
+        width:22px;
+        height:22px;
+    }
+    .siteHeader .bottomPart .serSides .navbar-nav li.nav-item > a.nav-link{
+        font-size:30px;
+        padding:18px;
+        text-align: center;
+    }
+    .siteHeader .bottomPart .row .detailSide .row{
+        padding:40px;
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce {
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
 
-@media screen and (max-width:639px){
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul{
+        max-height:0;
+        overflow: hidden;
+        -moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+        transition: max-height 0.3s;
+        margin:10px 0;                
+    }
+
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle svg{
+        display:block;
+        font-size:16px;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+    
     .technologies .snglTech .technoWrap{
         width:100px;
         height:100px;
@@ -852,9 +1173,201 @@
         padding-top:80px;
         padding-bottom:80px;
     }
+    .projectLogos .container-sm{
+        max-width:400px;
+    }
+    .projectLogos .snglProject .card{
+        min-height:60px;
+    }
+    .projectLogos.section{
+        padding-left:0;
+        padding-right:0;
+    }
+    .wpSolutions .allSolutions {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: calc(100% - 30px);
+        margin: auto;
+    }
+    .wpSolutions .allSolutions .snglSolution{
+        width:100%;
+        flex:auto;   
+        position: relative;
+        min-height:70px;
+        padding-left:85px;
+        text-align: left!important;
+        align-items: center;
+        display: flex;;     
+    }
+    .wpSolutions .allSolutions .snglSolution:hover .iconWrap{
+        outline:none;
+    }
+    .wpSolutions .allSolutions .snglSolution .iconWrap{
+        position: absolute;
+        width:70px;
+        height:70px;
+        left:0;
+        font-size:26px;
+        top:0
+    }
+    .wpSolutions .allSolutions .snglSolution .solTitle{
+        font-size:19px;
+        font-weight:var(--medium);
+        margin:0;
+        line-height:1.4em        
+    }
+    .allSteps .snglStep .stepTitle{
+        color:var(--primaryColor)!important;
+        font-size:16px;
+    }
+    .allSteps .snglStep .stepNum{
+        margin-bottom:5px;
+    }
+    .allSteps .snglStep .stepNum{
+        width:70px;
+        height:70px;
+    }
+    .allSteps .snglStep {
+        margin: 10px 0;
+        padding: 0 0;
+        max-width: 25%;
+        flex: auto;
+    }
+    .allSteps{
+        background:transparent;
+        margin-top:15px!important;
+    }
+    .allSteps h2,
+    .allSteps .card .card-body h3{
+        color:var(--primaryColor)
+    }
+    .allSteps .card .card-body h3{
+        margin-top:15px!important;
+    }
+    .allSteps .col-sm-6{
+        margin:15px 0;
+        padding:0;
+    }
+    .siteHeader .bottomPart{        
+        max-height:calc(100vh - 77px);
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce{
+        text-align: left;
+    }
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle {
+        font-size: 22px;
+        color: rgba(255,255,255,0.6);
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        align-items: center;
+      }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul li.nav-item ul li{
+        margin:10px 0;
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul li a.nav-link{
+        font-size:14px;
+        line-height:normal;
+    }
+    .hideMediumDesvices{
+        display:block;
+        text-align: center;
+        margin-bottom:40px!important;
+    }
+
+    
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce.active ul{
+        max-height:100vh
+    }
+
+
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul li{
+        margin:13px 0;
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce ul li a.nav-link{
+        font-size:16px;
+    }
+    .siteHeader .bottomPart .row .detailSide .snglServivce .serTitle{
+        font-size:22px;
+        color:rgba(255,255,255,0.6);
+        display: flex;
+        justify-content: space-between;
+        cursor:pointer;
+        align-items: center;
+    }
+
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce.active .serTitle{
+        color:var(--whiteColor)
+    }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce.active .serTitle svg{
+        transform:rotate(90deg)
+    }
+    
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce.active.active  ul li a.nav-link{
+        opacity: 1;
+    }
+    .siteHeader .bottomPart .contDetails{
+        padding-top:30px;
+    }
+    .reasons .heading{
+        top:80px;
+        padding:25px;
+    }
+
+    .packageDetail .packageWrap .planWrap p{
+        font-size:20px;;
+    }
+
+    .pricing .packageWrap .priceWrap,
+    .packageDetail .packageWrap .planWrap{
+        width:100%;
+        text-align: center;
+    }
+    .packageDetail .packageWrap .planWrap{
+        padding:0 40px;
+        padding-bottom:40px;
+        background:var(--whiteColor);
+        min-height:auto;
+    }
+    .packageDetail .packageWrap .planWrap ul li svg{
+        display:none
+    }
+    .packageDetail .packageWrap .planWrap ul li{
+        font-size:15px;
+        padding:8px 0;
+        margin:0;
+    }
+    .packageDetail .packageWrap .planWrap ul li:not(:first-child){
+        border-top:1px solid var(--borderColor)
+    }
+    .packageDetail .packageWrap .planWrap ul li.disabled{
+        display:none;
+    }
+    .pricing .packageWrap .priceWrap h2{
+        font-size:65px;
+    }
+    .pricing .packageDetail{
+        margin-top:30px;
+    }
+    .pricing .packageWrap .priceWrap .planSet{
+        justify-content: center;
+    }
+    .pricing .packageWrap .priceWrap p{
+        font-size:15px;
+    }
 }
 
 @media screen and (max-width:479px){
+    :root{
+        --h1:50px;
+        --h2:35px;
+        --h3:28px;
+        --h4:25px;
+        --h5:18px;
+        --h6:15px;
+        --g-text-line-height:1.4em;
+    }
+    
     .section{
         padding-top:40px;
         padding-bottom:40px;
@@ -862,6 +1375,10 @@
     .btn{
         padding:8px 18px;
     }
+    .siteHeader .bottomPart .row .mobileDevice .detailSide .snglServivce:last-child{
+        border-bottom:none;
+    }
+    
     .siteLogo img{
         max-height:24px;
     }
@@ -891,5 +1408,25 @@
     .technologies .snglTech .technoWrap img {
         max-width: 32px;
         max-height: 26px;
-      }
+    }
+    .wpSolutions .mb-4{
+        margin-bottom:1rem!important
+    }
+    .pricing .nav-pills .nav-item a.nav-link{
+        font-size:14px;
+        padding:8px 13px;
+    }
+    .pricing .packageWrap .priceWrap .btnArea .btn{
+        font-size:18px;
+        padding:10px 25px
+    }
+    .packageDetail .packageWrap .planWrap ul{
+        margin-bottom:0;
+    }
+    .pricing::after{
+        max-height:80%;
+    }
+    .pricing .packageDetail{
+        box-shadow:none!important;
+    }
 }

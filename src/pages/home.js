@@ -17,7 +17,7 @@ function Home(){
                 btnLink="https://forms.gle/fbFftGSRXGQueHur8"
                 btnText="Let’s work together"
             />            
-            <section id="biosSection" className="container-fluid section bios">
+            <section id="biosSection" className="container-fluid g-0 section bios">
                 <div className="container-lg">
                     <div className="row text-center g-0 justify-content-center">
                         <div className="col-md-9">

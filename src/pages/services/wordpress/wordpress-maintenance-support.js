@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import Estimate from '../../../components/estimate';
@@ -65,6 +65,32 @@ function Portfolio(props){
 
 function MaintenanceSupport(){
 
+    {/* Plans/Pricing/Packages Data  */}
+    
+    const [hourly, setHourly] = useState('hourly');
+
+     const [basic, setBasic] = useState('19<sub>.99/hr</sub>');    
+     const [business, setBusiness] = useState(' 25<sub>.99/hr</sub>');    
+     const [premium, setPremium] = useState(' 33<sub>.99/hr</sub>');    
+     const [enterises, setEnterises] = useState(' 42<sub>.99/hr</sub>');    
+  
+    function handleUpdate() {
+        setBasic('179<sub>.99/mo</sub>') ;
+        setBusiness('229<sub>.99/mo</sub>') ;
+        setPremium('329<sub>.99/mo</sub>') ;
+        setEnterises('569<sub>.99/mo</sub>') ;
+        setHourly('monthly') ;
+    }
+  
+    function handleRevert() {
+        setBasic('19<sub>.99/hr</sub>');
+        setBusiness('25<sub>.99/hr</sub>');
+        setPremium('33<sub>.99/hr</sub>');
+        setEnterises('42<sub>.99/hr</sub>');
+        setHourly('hourly') ;
+    }
+    
+    
     const solutonData = [
         {   
             
@@ -183,7 +209,8 @@ function MaintenanceSupport(){
                 bannerDescription={["At eHues Web Solutions, we offer top-notch WordPress maintenance and support services to help businesses keep their WordPress websites running smoothly and efficiently. Our team of experienced WordPress experts provides comprehensive support services, including updates, backups, security, troubleshooting, and more.", <br /> , <br /> ,"We understand that maintaining a WordPress website can be time-consuming and complex, which is why we offer flexible maintenance packages that are tailored to meet the unique needs of businesses. Our services are designed to ensure that your WordPress website is always up-to-date, secure, and performing at its best.", <br /> , <br /> ,"From regular backups and updates to fixing issues and resolving conflicts, we provide end-to-end WordPress maintenance and support services that are designed to keep your website running smoothly. We also offer custom solutions that can be tailored to meet the specific requirements of your business.", <br /> , <br /> , "At eHues Web Solutions, we are committed to providing exceptional WordPress maintenance and support services that help businesses enhance their online presence and achieve their growth objectives. Contact us today to learn how we can help you keep your WordPress website running smoothly."]}
                 btnText="View Our Pricing"
                 btnLink="#pricing"
-            />            
+            />             
+                     
             <section id="projectLogos" className="container-fluid section pb-0 projectLogos">
                 {/* <div className="container">
                     <div className="row g-0 text-center mb-5">
@@ -221,7 +248,7 @@ function MaintenanceSupport(){
             </section>
             <section id="reasons" className="container-fluid reasons g-0">
                 <div className="container">
-                    <div className="row text-light first section pb-0">
+                    <div className="row text-light align-items-start first section pb-0">
                         <div className="col-md-5 text-end heading">
                             <h2>Abandoned by developers? Get back on track with our expert support services for your WordPress site.</h2>
                         </div>
@@ -230,7 +257,7 @@ function MaintenanceSupport(){
                             <p>At eHues Web Solutions, we understand that your website is a product that requires continuous improvement processes to stay up-to-date with market trends and customer expectations. That's why we work with you to ensure that your WordPress site remains secure, optimized, and up-to-date with the latest technology and best practices. Our WordPress maintenance and support services are tailored to meet your unique requirements, and we work closely with you to ensure that your site aligns with your business objectives and online goals. Contact us today to learn more about how we can help you keep your WordPress site running smoothly and maximize its potential.</p>                            
                         </div>
                     </div>                    
-                    <div className="row text-light second section pb-0 flex-row-reverse">
+                    <div className="row text-light second align-items-start section pb-0 flex-row-reverse">
                         <div className="col-md-5 heading">
                             <h2>Without a dedicated support team, you may face challenges.</h2>
                         </div>
@@ -239,7 +266,7 @@ function MaintenanceSupport(){
                             <p>Even if you've developed your WordPress site in-house, it can be a challenge to maintain it if your team is stretched too thin or if someone leaves the company. With our continuous 24x7 support, you can have peace of mind knowing that your WordPress site is always in good hands, and any issues will be promptly resolved. Contact us today to learn more about how we can help you keep your WordPress site running smoothly and maximize its potential.</p>
                         </div>
                     </div>
-                    <div className="row text-light first section">
+                    <div className="row text-light align-items-start first section">
                         <div className="col-md-5 text-end heading">
                             <h2>Your website is experiencing functionality issues and needs attention to ensure optimal performance.</h2>
                         </div>
@@ -268,10 +295,10 @@ function MaintenanceSupport(){
                     <div className="row g-0 justify-content-center">
                         <div className="col-lg-9 col-md-12">
                             <div className="row g-0 align-items-center ">
-                                <div className="col-md-5 leftSide ps-5 clientDetails position-relative">                            
+                                <div className="col-md-5 leftSide clientDetails position-relative">                            
                                     <img src="assets/images/rumTan.jpg" alt="" />                            
                                 </div>                                
-                                <div className="col-md-7 ps-5 rightSide ">
+                                <div className="col-md-7 ps-3 rightSide ">
                                     <h4><img src="assets/images/left-quote.svg" alt="Left Quote" /> Ehues' team created an exceptional WordPress site, with prompt feedback and outstanding commitment to quality and client satisfaction. Highly recommend for reliable and talented development services.</h4>
                                     <p className="mt-4 mb-4 textColor">Rum Tan, Co-Founder</p>
                                     <img src="assets/images/sm-tutor.svg" alt="Smile Tutor Agency" width="150px" />                            
@@ -295,7 +322,7 @@ function MaintenanceSupport(){
                     </div>
                 </div>                
             </section>
-            <section id="pricing" className="container-fluid pricing section pb-0">                
+            <section id="pricing" className="container-fluid pricing section pb-0 g-0">                
                 <div className="container-lg">
                     <div className="row g-0 justify-content-center">
                         <div className="col-sm-12 col-lg-8 text-center text-light">
@@ -304,7 +331,7 @@ function MaintenanceSupport(){
                         <div className="col-sm-12">
                         <Tab.Container id="left-tabs-example" defaultActiveKey="basic">
                         <div className="row g-0 justify-content-center ">
-                            <div className="col-sm-12 col-lg-6 packageTitles">
+                            <div className="col-sm-6 packageTitles">
                                 <Nav variant="pills" className="flex-divumn">
                                     <Nav.Item>
                                         <Nav.Link eventKey="basic">
@@ -342,16 +369,20 @@ function MaintenanceSupport(){
                                         <div className="packageWrap container-fluid g-0">
                                             <div className="row g-0">
                                                 <div className="col-6 priceWrap">
+                                                    <div className={`planSet ${hourly}`}>
+                                                        <a href="javascript:void(0);" onClick={handleRevert}  className={'btn'}>hourly</a>
+                                                        <a href="javascript:void(0);" onClick={handleUpdate} className={'btn'}>Monthly</a>
+                                                    </div>                                                    
                                                     <h3 className="mb-1">Basic</h3>
                                                     <p>Affordable and reliable WordPress support and maintenance.</p>
                                                     <div className="mt-4">
                                                         <h2>
-                                                            $179<sub>.99/mo</sub>
+                                                            <span className={`hourly`} dangerouslySetInnerHTML={{ __html: basic }}></span>
                                                         </h2>
                                                         <div className="btnArea mt-3">
                                                             <a href="#" className="btn btn-primary">Contact Us</a>
                                                         </div>
-                                                    </div>
+                                                    </div>                                                    
                                                 </div>
                                                 <div className="col-6 planWrap">
                                                     <p>Basic plans includes:</p>
@@ -377,11 +408,15 @@ function MaintenanceSupport(){
                                         <div className="packageWrap container-fluid g-0">
                                             <div className="row g-0">
                                                 <div className="col-6 priceWrap">
+                                                     <div className={`planSet ${hourly}`}>
+                                                        <a href="javascript:void(0);" onClick={handleRevert}  className={'btn'}>hourly</a>
+                                                        <a href="javascript:void(0);" onClick={handleUpdate} className={'btn'}>Monthly</a>
+                                                    </div> 
                                                     <h3 className="mb-1">Business</h3>
                                                     <p>Affordable and reliable WordPress support and maintenance.</p>
                                                     <div className="mt-4">
                                                         <h2>
-                                                            $229<sub>.99/mo</sub>
+                                                            <span className={`hourly`} dangerouslySetInnerHTML={{ __html: business }}></span>
                                                         </h2>
                                                         <div className="btnArea mt-3">
                                                             <a href="#" className="btn btn-primary">Contact Us</a>
@@ -412,11 +447,15 @@ function MaintenanceSupport(){
                                         <div className="packageWrap container-fluid g-0">
                                             <div className="row g-0">
                                                 <div className="col-6 priceWrap">
+                                                    <div className={`planSet ${hourly}`}>
+                                                        <a href="javascript:void(0);" onClick={handleRevert}  className={'btn'}>hourly</a>
+                                                        <a href="javascript:void(0);" onClick={handleUpdate} className={'btn'}>Monthly</a>
+                                                    </div> 
                                                     <h3 className="mb-1">Premium</h3>
                                                     <p>Affordable and reliable WordPress support and maintenance.</p>
                                                     <div className="mt-4">
                                                         <h2>
-                                                            $329<sub>.99/mo</sub>
+                                                            <span className={`hourly`} dangerouslySetInnerHTML={{ __html: premium }}></span>
                                                         </h2>
                                                         <div className="btnArea mt-3">
                                                             <a href="#" className="btn btn-primary">Contact Us</a>
@@ -447,11 +486,15 @@ function MaintenanceSupport(){
                                         <div className="packageWrap container-fluid g-0">
                                             <div className="row g-0">
                                                 <div className="col-6 priceWrap">
+                                                    <div className={`planSet ${hourly}`}>
+                                                        <a href="javascript:void(0);" onClick={handleRevert}  className={'btn'}>hourly</a>
+                                                        <a href="javascript:void(0);" onClick={handleUpdate} className={'btn'}>Monthly</a>
+                                                    </div> 
                                                     <h3 className="mb-1">Enterprises</h3>
                                                     <p>Affordable and reliable WordPress support and maintenance.</p>
                                                     <div className="mt-4">
                                                         <h2>
-                                                            569<sub>.99/mo</sub>
+                                                            <span className={`hourly`} dangerouslySetInnerHTML={{ __html: enterises }}></span>
                                                         </h2>
                                                         <div className="btnArea mt-3">
                                                             <a href="#" className="btn btn-primary">Contact Us</a>

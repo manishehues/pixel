@@ -5,6 +5,7 @@ import { NavLink, BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion, useSpring, useMotionValue } from "framer-motion";
 
 
+
 import './assets/css/custom.css'; 
 import './assets/css/responsive.css'; 
 import './App.css';
@@ -12,6 +13,7 @@ import './App.css';
 import ScrollToTop from './components/ScrollToTop'; 
 import Header from './components/header';
 import Footer from './components/Footer';
+
 
 
 

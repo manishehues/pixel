@@ -779,15 +779,17 @@ h6{
 #clientsReviews.clientsReviews .leftSide::after{
     content:'';
     position: absolute;
-    left:1rem;
-    top:2rem;
-    width:calc(100% - 3rem);
+    left:0;
+    top:30px;
+    width:calc(100% - 60px);
     height:100%;
     background:url('../../../public/assets/images/bg-pattern.svg') repeat;
     z-index: -1;
     background-size:50px    
 }
-
+#clientsReviews.clientsReviews .clientDetails img{
+    max-width:calc(100% - 70px);
+}
 
 
 /* ============ Site Footer ============ */
@@ -1259,6 +1261,7 @@ h6{
 
 .wpSolutions .allSolutions .snglSolution{
     margin:20px 0;
+
 }
 
 .wpSolutions .allSolutions .snglSolution .iconWrap{
@@ -1271,21 +1274,34 @@ h6{
     background-color: var(--accentColor);
     display:flex;
     place-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: 0 solid var(--accentColor);       
 }
 
 .wpSolutions .allSolutions .snglSolution .iconWrap{
     font-size:40px;
     color:var(--whiteColor)
 }
-.wpSolutions .allSolutions .snglSolution .iconWrap svg path{
-    stroke: var(--whiteColor)
+.wpSolutions .allSolutions .snglSolution:last-child .iconWrap svg path{
+    stroke: var(--whiteColor);    
 }
 .wpSolutions .allSolutions .snglSolution .solTitle{
     font-size:var(--h6);
     font-weight:normal;
     letter-spacing: normal;
     line-height:1.4em
+}
+.wpSolutions .allSolutions .snglSolution:hover .iconWrap{
+    background:var(--primaryColor)
+}
+.wpSolutions .allSolutions .snglSolution:hover .iconWrap{
+    outline-offset: 5px;  
+    outline: 3px solid var(--primaryColor); 
 }
 
 .allSteps{
@@ -1320,8 +1336,7 @@ h6{
 }
 .reasons .heading{
     position: sticky;
-    top:200px;
-    max-height:500px;
+    top:200px;    
 }
 
 .reasons .content{
@@ -1388,6 +1403,10 @@ h6{
     background:var(--whiteColor);    
 }
 
+.pricing .packageDetail .fade{
+    transition: unset;
+}
+
 .pricing .tab-content{
     width:100%;
 }
@@ -1395,12 +1414,45 @@ h6{
 .pricing .packageWrap .priceWrap{
     padding:60px;
 }
-
-.pricing .packageWrap .priceWrap p{
-    
+.pricing .packageWrap .priceWrap .planSet{
+    display:flex;
+    margin-bottom:20px;
+}
+.pricing .packageWrap .priceWrap .planSet .btn{
+    border:1px solid var(--textColor);
+    padding:6px 13px;
+    font-size:13px;
+    min-width:80px;
+    text-transform: capitalize; 
+    color:var(--textColor)
+}
+.pricing .packageWrap .priceWrap .planSet .btn:first-child{
+    border-right:0;
+    box-shadow: inset -1px 0px 0px 0 var(--textColor);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.pricing .packageWrap .priceWrap .planSet .btn:last-child{
+    border-left:0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-
+.pricing .packageWrap .priceWrap .planSet.hourly .btn:first-child{
+    border-color:var(--accentColor);
+    background:#E4E3F5;
+    color:var(--accentColor);
+    box-shadow: inset -1px 0px 0px 0 var(--accentColor);
+}
+.pricing .packageWrap .priceWrap .planSet.monthly .btn:last-child{
+    border-color:var(--accentColor);
+    background:#E4E3F5;
+    color:var(--accentColor);
+    box-shadow: inset 1px 0px 0px 0 var(--accentColor);
+}
+.pricing .packageWrap .priceWrap .planSet.monthly .btn:first-child{
+    box-shadow:none;
+}
 
 .pricing .packageWrap .priceWrap h2 sub{
     font-size:20px;
